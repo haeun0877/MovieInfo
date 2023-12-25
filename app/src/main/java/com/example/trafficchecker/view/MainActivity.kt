@@ -19,5 +19,6 @@ class MainActivity : AppCompatActivity() {
 
         mBinding.lifecycleOwner = this
         mBinding.viewModel = model
+
     }
 }
