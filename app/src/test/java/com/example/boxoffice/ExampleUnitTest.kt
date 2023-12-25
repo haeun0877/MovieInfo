@@ -1,4 +1,4 @@
-package com.example.trafficchecker
+package com.example.boxoffice
 
 import org.junit.Test
 

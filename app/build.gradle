@@ -7,7 +7,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.trafficchecker"
+        applicationId "com.example.boxoffice"
         minSdk 21
         targetSdk 33
         versionCode 1
@@ -50,4 +50,16 @@ dependencies {
     //LiveData
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.2"
     implementation "androidx.activity:activity-ktx:1.1.0"
+
+    //Retrofit2
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation 'com.squareup.retrofit2:converter-scalars:2.5.0'
+    //xml parser
+    implementation 'com.tickaroo.tikxml:annotation:0.8.13'
+    implementation 'com.tickaroo.tikxml:core:0.8.13'
+    implementation 'com.tickaroo.tikxml:retrofit-converter:0.8.13'
+
+    //Gson
+    implementation "com.google.code.gson:gson:2.10.1"
 }

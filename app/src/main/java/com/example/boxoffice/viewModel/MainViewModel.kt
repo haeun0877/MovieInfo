@@ -1,4 +1,4 @@
-package com.example.trafficchecker.viewModel
+package com.example.boxoffice.viewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

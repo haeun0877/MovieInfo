@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="com.example.trafficchecker.viewModel.MainViewModel" />
+            type="com.example.boxoffice.viewModel.MainViewModel" />
 
     </data>
 
