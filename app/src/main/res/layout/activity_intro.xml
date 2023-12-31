@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.IntroActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kofic"
+            android:textStyle="bold"
+            android:textSize="48dp"
+            android:textColor="@color/purple_700"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_sub_title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="영화진흥위원회"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginLeft="4dp"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="@+id/tv_title"
+            app:layout_constraintBottom_toTopOf="@+id/tv_sub"
+            app:layout_constraintStart_toEndOf="@+id/tv_title"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Korean Film Council"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sub_title"
+            app:layout_constraintStart_toStartOf="@+id/tv_sub_title"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_title"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

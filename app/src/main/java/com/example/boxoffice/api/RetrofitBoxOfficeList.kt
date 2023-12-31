@@ -1,6 +1,6 @@
-package com.example.boxoffice.retrofit
+package com.example.boxoffice.api
 
-import com.example.boxoffice.retrofit.dataClass.BoxOfficeItem
+import com.example.boxoffice.api.model.BoxOfficeDailyItems
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -8,8 +8,8 @@ import retrofit2.http.Query
 interface RetrofitBoxOfficeList {
 
     @GET("searchDailyBoxOfficeList.json")
-    fun getBoxOfficeList(
+    suspend fun getBoxOfficeList(
         @Query("key") key: String,
         @Query("targetDt") targetDt: String
-        ) : Call<BoxOfficeItem>
+        ) : BoxOfficeDailyItems
 }
