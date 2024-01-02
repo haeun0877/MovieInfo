@@ -4,4 +4,4 @@
 
 1. **디자인 패턴** : MVVM 적용
 2. **사용 언어** : kotlin
-3. **사용 기술** : Live Data, View Binding, Data Binding, Coroutine, Retrofit2, DTO
+3. **사용 기술** : Live Data, View Binding, Data Binding, Coroutine, Retrofit2, DTO, Room, DAO
