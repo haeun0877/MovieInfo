@@ -1,21 +1,40 @@
 package com.example.boxoffice.viewModel
 
+import android.content.Context
+import android.os.Handler
+import android.os.Looper
+import android.widget.Toast
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class MainViewModel : ViewModel() {
 
-    var count : MutableLiveData<Int> = MutableLiveData()
+    // 뒤로 가기 리스너 관련 변수
+    private val _finishCheck = MutableLiveData<Boolean>()
+    val finishCheck: LiveData<Boolean>
+        get() = _finishCheck
+    lateinit var exitToast: Toast
+    private var backPressed = false
 
-    init {
-        count.value = 0
-    }
 
-    fun increase() {
-        count.value = count.value?.plus(1)
-    }
+    // 뒤로가기 버튼 클릭 시 체크
+    fun checkBackPressed(context: Context){
 
-    fun decrease() {
-        count.value = count.value?.minus(1)
+        if(backPressed){
+            _finishCheck.value = true
+        }else{
+            exitToast = Toast.makeText(context, "'뒤로'버튼을 한 번 더 누르시면 종료됩니다.", Toast.LENGTH_SHORT)
+            exitToast.show()
+
+            backPressed = true
+
+            // LENGTH_SHORT 길이(2초)의 Toast 메세지가 끝나면 backPressed를 다시 false로 변경해줌
+            Handler(Looper.getMainLooper()).postDelayed({
+                backPressed = false
+            }, 2000)
+        }
+
+
     }
 }
