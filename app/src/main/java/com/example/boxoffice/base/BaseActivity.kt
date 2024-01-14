@@ -1,4 +1,4 @@
-package com.example.boxoffice.api.base
+package com.example.boxoffice.base
 
 import android.os.Bundle
 import androidx.annotation.LayoutRes

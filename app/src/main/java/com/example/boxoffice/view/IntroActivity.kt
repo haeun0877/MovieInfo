@@ -7,7 +7,7 @@ import android.util.Log
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.boxoffice.R
-import com.example.boxoffice.api.base.BaseActivity
+import com.example.boxoffice.base.BaseActivity
 import com.example.boxoffice.databinding.ActivityIntroBinding
 import com.example.boxoffice.viewModel.BoxOfficeDailyViewModel
 import kotlinx.coroutines.DelicateCoroutinesApi

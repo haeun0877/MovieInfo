@@ -1,4 +1,4 @@
-package com.example.boxoffice.api.model
+package com.example.boxoffice.remote.model
 
 import com.google.gson.annotations.SerializedName
 

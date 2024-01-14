@@ -10,7 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.boxoffice.R
 import com.example.boxoffice.adapter.BoxOfficeDailyAdapter
-import com.example.boxoffice.api.base.BaseFragment
+import com.example.boxoffice.base.BaseFragment
 import com.example.boxoffice.databinding.FragmentBoxOfficeDailyListBinding
 import com.example.boxoffice.viewModel.BoxOfficeDailyViewModel
 

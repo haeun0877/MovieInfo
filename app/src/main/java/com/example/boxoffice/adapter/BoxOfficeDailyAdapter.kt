@@ -1,12 +1,9 @@
 package com.example.boxoffice.adapter
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.boxoffice.api.model.BoxOfficeDailyItems
-import com.example.boxoffice.api.model.BoxOfficeResult
-import com.example.boxoffice.api.model.DailyBoxOffice
+import com.example.boxoffice.remote.model.DailyBoxOffice
 import com.example.boxoffice.databinding.BoxOfficeDailyRowBinding
 
 class BoxOfficeDailyAdapter() : RecyclerView.Adapter<BoxOfficeDailyAdapter.ViewHolder>() {

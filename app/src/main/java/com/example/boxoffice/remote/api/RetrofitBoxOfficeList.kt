@@ -1,7 +1,6 @@
-package com.example.boxoffice.api
+package com.example.boxoffice.remote.api
 
-import com.example.boxoffice.api.model.BoxOfficeDailyItems
-import retrofit2.Call
+import com.example.boxoffice.remote.model.BoxOfficeDailyItems
 import retrofit2.http.GET
 import retrofit2.http.Query
 

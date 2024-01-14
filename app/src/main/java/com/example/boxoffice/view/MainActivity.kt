@@ -1,14 +1,9 @@
 package com.example.boxoffice.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.activity.viewModels
-import androidx.databinding.DataBindingUtil
 import com.example.boxoffice.R
-import com.example.boxoffice.api.base.BaseActivity
-import com.example.boxoffice.api.model.BoxOfficeDailyItems
+import com.example.boxoffice.base.BaseActivity
 import com.example.boxoffice.databinding.ActivityMainBinding
-import com.example.boxoffice.viewModel.MainViewModel
 
 class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
 

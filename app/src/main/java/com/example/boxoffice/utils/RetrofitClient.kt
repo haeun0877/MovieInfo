@@ -1,6 +1,6 @@
 package com.example.boxoffice.utils
 
-import com.example.boxoffice.api.RetrofitBoxOfficeList
+import com.example.boxoffice.remote.api.RetrofitBoxOfficeList
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import retrofit2.Retrofit
