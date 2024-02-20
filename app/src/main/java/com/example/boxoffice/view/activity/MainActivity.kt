@@ -1,6 +1,7 @@
 package com.example.boxoffice.view.activity
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer

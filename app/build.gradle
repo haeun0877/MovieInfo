@@ -80,4 +80,7 @@ dependencies {
     //hilt
     implementation "com.google.dagger:hilt-android:2.44"
     kapt "com.google.dagger:hilt-compiler:2.44"
+
+    //autoScrollViewPager
+    implementation 'com.github.demoNo:AutoScrollViewPager:v1.0.2'
 }
