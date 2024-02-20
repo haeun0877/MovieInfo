@@ -1,12 +1,12 @@
 ## Movie Info
 일별, 주간/주말 박스오피스, 영화 목록, 영화인 목록, 영화사 목록 정보 제공하는 앱
-<br/>
 
+<br/>
 1. **디자인 패턴** : MVVM 적용
 2. **사용 언어** : kotlin
 3. **사용 기술** : Live Data, View Binding, Data Binding, Coroutine, Retrofit2, DTO, Room, DAO
 <br/>
-<br/>
+
 ### 패키지 구조
 ![image](https://github.com/haeun0877/MovieInfo/assets/70643208/9dfa3903-b657-4bbe-a767-81f81039a451)
 - **adapter** : recycler나 여러 종류에 사용되는 adpater 모음
