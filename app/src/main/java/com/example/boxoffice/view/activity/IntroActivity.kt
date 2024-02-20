@@ -20,6 +20,7 @@ class IntroActivity : BaseActivity<ActivityIntroBinding>(R.layout.activity_intro
             delay(2000)
 
             startActivity(intent)
+            finish()
         }
     }
 }
