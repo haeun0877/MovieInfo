@@ -1,6 +1,7 @@
 package com.example.boxoffice.adapter
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.boxoffice.remote.model.DailyBoxOffice
@@ -26,7 +27,16 @@ class BoxOfficeDailyAdapter() : RecyclerView.Adapter<BoxOfficeDailyAdapter.ViewH
     class ViewHolder(private val binding: BoxOfficeDailyRowBinding) :
         RecyclerView.ViewHolder(binding.root) {
             fun bind(currentOffice: DailyBoxOffice){
+                val openDate = currentOffice.openDt + " 개봉"
+
                 binding.tvTitle.text = currentOffice.movieNm
+                binding.tvOpenDate.text = openDate
+
+                if(currentOffice.rankOldAndNew == "OLD"){
+                    binding.tvNew.visibility = View.GONE
+                }else{
+                    binding.tvNew.visibility = View.VISIBLE
+                }
             }
     }
 }
