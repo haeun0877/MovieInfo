@@ -7,7 +7,7 @@
 
 ### API
 - 영화 진흥 위원회 오픈 API 사용 : https://kobis.or.kr/kobisopenapi/homepg/main/main.do
-- retrofit 라이브러리 사용하여 RESTFul API 통신 구현
+- retrofit 라이브러리 사용하여 RESTFul API 통신 구현<br/> <br/>
 
 ### 패키지 구조
 ![image](https://github.com/haeun0877/MovieInfo/assets/70643208/9dfa3903-b657-4bbe-a767-81f81039a451)
