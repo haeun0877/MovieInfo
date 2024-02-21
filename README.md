@@ -5,6 +5,10 @@
 2. **사용 언어** : kotlin
 3. **사용 기술** : Live Data, View Binding, Data Binding, Coroutine, Retrofit2, Room, Hilt, Navigation <br/> <br/>
 
+### 사용 오픈 API
+영화 진흥 위원회 오픈 API 사용 
+https://kobis.or.kr/kobisopenapi/homepg/main/main.do
+
 ### 패키지 구조
 ![image](https://github.com/haeun0877/MovieInfo/assets/70643208/9dfa3903-b657-4bbe-a767-81f81039a451)
 - **adapter** : recycler나 여러 종류에 사용되는 adpater 모음
