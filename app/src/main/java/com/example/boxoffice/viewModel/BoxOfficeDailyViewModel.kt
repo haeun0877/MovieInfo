@@ -13,7 +13,7 @@ import javax.inject.Inject
 @HiltViewModel
 class BoxOfficeDailyViewModel @Inject constructor(
     private val repository: Repository
-): ViewModel() {
+    ): ViewModel() {
 
     private var items = MutableLiveData<BoxOfficeDailyItems>()
     val result: LiveData<BoxOfficeDailyItems>

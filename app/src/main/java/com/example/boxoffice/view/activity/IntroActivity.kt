@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.example.boxoffice.R
 import com.example.boxoffice.base.BaseActivity
 import com.example.boxoffice.databinding.ActivityIntroBinding
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay

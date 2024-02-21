@@ -13,7 +13,10 @@ import com.example.boxoffice.databinding.ActivityMainBinding
 import com.example.boxoffice.utils.Utils
 import com.example.boxoffice.view.fragment.BoxOfficeDailyListFragment
 import com.example.boxoffice.viewModel.MainViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+
+@AndroidEntryPoint
 class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
 
     private val viewModel : MainViewModel by viewModels()

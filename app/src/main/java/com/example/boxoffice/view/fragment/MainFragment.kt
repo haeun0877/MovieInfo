@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.example.boxoffice.R
 import com.example.boxoffice.adapter.BoxOfficeDailyAdapter
 import com.example.boxoffice.base.BaseFragment
@@ -22,5 +23,8 @@ class MainFragment : BaseFragment<FragmentMainBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.clDailyBoxoffice.setOnClickListener {
+            Navigation.findNavController(binding.root).navigate(R.id.action_main_to_daily)
+        }
     }
 }

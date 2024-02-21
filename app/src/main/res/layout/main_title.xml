@@ -11,6 +11,7 @@
         android:src="@drawable/ic_back"
         android:padding="20dp"
         app:tint="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/tv_title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
@@ -19,11 +20,30 @@
         android:id="@+id/tv_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textSize="18dp"
+        android:textSize="22dp"
         android:textColor="#000000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12dp"
+        android:autoSizeStepGranularity="1dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_back"
+        app:layout_constraintEnd_toStartOf="@+id/iv_back_invisible"/>
+
+    <ImageView
+        android:id="@+id/iv_back_invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:padding="20dp"
+        android:visibility="invisible"
+        app:tint="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_title"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView

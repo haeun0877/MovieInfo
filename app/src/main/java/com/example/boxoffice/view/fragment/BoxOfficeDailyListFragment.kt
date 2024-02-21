@@ -7,15 +7,20 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import com.example.boxoffice.adapter.BoxOfficeDailyAdapter
 import com.example.boxoffice.base.BaseFragment
 import com.example.boxoffice.databinding.FragmentBoxOfficeDailyListBinding
 import com.example.boxoffice.viewModel.BoxOfficeDailyViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+
+@AndroidEntryPoint
 class BoxOfficeDailyListFragment : BaseFragment<FragmentBoxOfficeDailyListBinding>() {
 
-    private lateinit var boxOfficeDailyAdapter: BoxOfficeDailyAdapter
     private val viewModel : BoxOfficeDailyViewModel by viewModels()
+    private lateinit var boxOfficeDailyAdapter: BoxOfficeDailyAdapter
 
     override fun getFragmentBinding(
         inflater: LayoutInflater,
@@ -27,15 +32,13 @@ class BoxOfficeDailyListFragment : BaseFragment<FragmentBoxOfficeDailyListBindin
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.layoutTitle.tvTitle.text = "일별 박스 오피스"
         viewModel.getList()
 
-
-        //TODO: haeun-> onBackpressed 안쓰임 새로운거로 교체해야함
         binding.layoutTitle.ivBack.setOnClickListener {
-            activity
+            view.findNavController().popBackStack()
         }
 
-        //TODO :haeun -> 제대로 Live Data 적용해야함 제대로 안된듯?
         boxOfficeDailyAdapter = BoxOfficeDailyAdapter()
 
         viewModel.result.observe(requireActivity(), Observer {
