@@ -19,7 +19,15 @@
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_box_office_filter"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
+        style="@style/myTabLayout"
+        android:layout_gravity="top"
+        app:tabBackground="#FFFFFF"
+        app:tabIndicatorColor="@color/purple_500"
+        app:tabIndicatorHeight="3dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#000000"
+        app:tabTextColor="#b4b4b4"
         app:layout_constraintTop_toBottomOf="@+id/layout_title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
