@@ -5,6 +5,9 @@
 2. **사용 언어** : kotlin
 3. **사용 기술** : Live Data, View Binding, Data Binding, Coroutine, Retrofit2, Room, Hilt, Navigation <br/> <br/>
 
+UI
+스켈레톤 라이브러리를 사용하여 리스트를 불러와지는 동안 로딩화면 구현 
+
 ### API
 - 영화 진흥 위원회 오픈 API 사용 : https://kobis.or.kr/kobisopenapi/homepg/main/main.do
 - retrofit 라이브러리 사용하여 RESTFul API 통신 구현<br/> <br/>
