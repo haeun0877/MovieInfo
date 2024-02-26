@@ -6,6 +6,7 @@
 3. **사용 기술** : Live Data, View Binding, Data Binding, Coroutine, Retrofit2, Room, Hilt, Navigation <br/> <br/>
 
 - UI **스켈레톤** 라이브러리를 사용하여 리스트를 불러와지는 동안 로딩화면 구현
+    - https://github.com/facebookarchive/shimmer-android 라이브러리
 - RecyclerView에 **DiffUtil**을 사용하여 효율적으로 리스트 업데이트 및 구현
 
 ### API
