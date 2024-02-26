@@ -19,7 +19,7 @@ class BoxOfficeDailyViewModel @Inject constructor(
     val result: LiveData<BoxOfficeDailyItems>
         get() = items
 
-    fun getList() = viewModelScope.launch {
-        items.value = repository.getBoxOfficeDailyList()
+    fun getList(targetDt: String) = viewModelScope.launch {
+        items.value = repository.getBoxOfficeDailyList(targetDt)
     }
 }

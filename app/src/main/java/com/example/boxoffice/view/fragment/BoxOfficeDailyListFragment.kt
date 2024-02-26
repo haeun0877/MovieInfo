@@ -1,5 +1,6 @@
 package com.example.boxoffice.view.fragment
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -13,6 +14,7 @@ import com.example.boxoffice.adapter.BoxOfficeDailyAdapter
 import com.example.boxoffice.base.BaseFragment
 import com.example.boxoffice.databinding.FragmentBoxOfficeDailyListBinding
 import com.example.boxoffice.viewModel.BoxOfficeDailyViewModel
+import com.google.android.material.tabs.TabLayout
 import dagger.hilt.android.AndroidEntryPoint
 
 
@@ -33,22 +35,33 @@ class BoxOfficeDailyListFragment : BaseFragment<FragmentBoxOfficeDailyListBindin
         super.onViewCreated(view, savedInstanceState)
 
         binding.layoutTitle.tvTitle.text = "일별 박스 오피스"
-        viewModel.getList()
 
         binding.layoutTitle.ivBack.setOnClickListener {
             view.findNavController().popBackStack()
         }
 
+        // 필터 탭
+        initTabSetting()
+
+        // 일별 박스 오피스 리스트
         boxOfficeDailyAdapter = BoxOfficeDailyAdapter()
+        viewModel.getList("20240101")
+        binding.rvBoxOfficeDaily.adapter = boxOfficeDailyAdapter
 
         viewModel.result.observe(requireActivity(), Observer {
             var boxOfficeDailItem = it.boxOfficeResult
             var boxList = boxOfficeDailItem.dailyBoxOfficeList
-            boxOfficeDailyAdapter.dailyBoxOffice = boxList.toMutableList()
-
-
-            binding.rvBoxOfficeDaily.adapter = boxOfficeDailyAdapter
+            boxOfficeDailyAdapter.submitList(boxList)
         })
+    }
+
+    private fun initTabSetting(){
+        binding.tabBoxOfficeFilter.tabMode = TabLayout.MODE_SCROLLABLE
+        binding.tabBoxOfficeFilter.setTabTextColors(Color.parseColor("#7b7f8f"), Color.parseColor("#FF6200EE"))
+
+        binding.tabBoxOfficeFilter.addTab(binding.tabBoxOfficeFilter.newTab().setText(" 관객수 순 "))
+        binding.tabBoxOfficeFilter.addTab(binding.tabBoxOfficeFilter.newTab().setText(" 개봉일 순 "))
+        binding.tabBoxOfficeFilter.addTab(binding.tabBoxOfficeFilter.newTab().setText(" 매출액 순 "))
     }
 
 }

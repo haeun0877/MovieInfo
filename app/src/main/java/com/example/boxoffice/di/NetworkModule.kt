@@ -37,7 +37,7 @@ class NetworkModule {
             .addInterceptor { chain ->
                 val request = chain.request()
                 val url = request.url()
-                Log.e("haeun","$url")
+                Log.e("api","$url")
                 chain.proceed(request)
             }
             .build()

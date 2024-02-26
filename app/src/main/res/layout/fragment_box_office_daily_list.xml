@@ -22,7 +22,6 @@
         android:layout_height="45dp"
         style="@style/myTabLayout"
         android:layout_gravity="top"
-        app:tabBackground="#FFFFFF"
         app:tabIndicatorColor="@color/purple_500"
         app:tabIndicatorHeight="3dp"
         app:tabMode="scrollable"
@@ -32,12 +31,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
+    <TextView
+        android:id="@+id/tv_tab_line"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:background="#f7f8fe"
+        app:layout_constraintTop_toBottomOf="@+id/tab_box_office_filter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_box_office_daily"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintTop_toBottomOf="@+id/tab_box_office_filter"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tab_line"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
