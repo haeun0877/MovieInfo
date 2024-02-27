@@ -13,15 +13,6 @@
         app:layout_constraintTop_toTopOf="parent"
         android:padding="10dp">
 
-        <ImageView
-            android:id="@+id/iv_number"
-            android:layout_width="34dp"
-            android:layout_height="34dp"
-            android:src="@drawable/number1"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
-
         <TextView
             android:id="@+id/tv_new"
             android:layout_width="wrap_content"
@@ -36,29 +27,27 @@
             android:paddingTop="2dp"
             android:paddingBottom="2dp"
             android:visibility="gone"
-            android:layout_marginLeft="10dp"
-            app:layout_constraintStart_toEndOf="@+id/iv_number"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
             android:id="@+id/tv_title"
-            android:layout_width="0dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:textSize="18dp"
             android:textColor="#000000"
-            android:text="테스트 제목"
+            android:text=""
             android:textStyle="bold"
             android:layout_marginTop="4dp"
             android:maxLines="1"
             android:singleLine="true"
-            android:layout_marginLeft="10dp"
+            android:background="@color/cardview_shadow_start_color"
             app:layout_constraintTop_toBottomOf="@+id/tv_new"
-            app:layout_constraintStart_toEndOf="@+id/iv_number"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <TextView
             android:id="@+id/tv_open_date"
-            android:layout_width="0dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:textSize="14dp"
             android:textColor="#c3c3c3"
@@ -66,10 +55,9 @@
             android:layout_marginTop="2dp"
             android:maxLines="1"
             android:singleLine="true"
-            android:layout_marginLeft="10dp"
+            android:background="@color/cardview_shadow_start_color"
             app:layout_constraintTop_toBottomOf="@+id/tv_title"
-            app:layout_constraintStart_toEndOf="@+id/iv_number"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

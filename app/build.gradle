@@ -83,4 +83,7 @@ dependencies {
 
     //autoScrollViewPager
     implementation 'com.github.demoNo:AutoScrollViewPager:v1.0.2'
+
+    //shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
 }
