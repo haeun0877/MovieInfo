@@ -6,7 +6,9 @@
 3. **사용 기술** : Live Data, View Binding, Data Binding, Coroutine, Retrofit2, Room, Hilt, Navigation <br/> <br/>
 
 - UI **스켈레톤** 라이브러리를 사용하여 리스트를 불러와지는 동안 로딩화면 구현
-    - https://developers.facebook.com/docs/android/componentsdks/ 라이브러리
+    - https://velog.io/@ehusrh8380/Android-kotlin-RecyclerView%EC%97%90-%EC%8A%A4%EC%BC%88%EB%A0%88%ED%86%A4-UI-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-Shimmer-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%82%AC%EC%9A%A9
+- **Hilt** 사용하여 의존성 주입
+    - https://velog.io/@ehusrh8380/Android-kotlin-%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%A3%BC%EC%9E%85DI%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC-Hilt-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EA%B8%B0
 - RecyclerView에 **DiffUtil**을 사용하여 효율적으로 리스트 업데이트 및 구현
 
 ### API
